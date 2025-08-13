@@ -14,6 +14,7 @@ obj/
 *.nupkg
 *.cache
 tib-backend/.env
+tib-backend/TibBackend/appsettings.Development.json
 .idea/
 *.iml
 .vscode/
