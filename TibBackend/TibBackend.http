@@ -1,0 +1,6 @@
+@TibBackend_HostAddress = http://localhost:5193
+
+GET {{TibBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
