@@ -33,23 +33,6 @@ The system is designed to highlight **full-stack competence**, with the backend 
 
 ---
 
-## File Structure
-theinnbetween/ <br>
-├─ tib-backend/        # ASP.NET backend and Node.js scripts for DB <br>
-│  ├─ src/         # C# controllers, models, and services <br>
-│  ├─ index.js     # DB connection and initial test script <br>
-│  ├─ package.json <br>
-│  └─.env            # Environment variables (not committed) <br>
-├─ tib-frontend/       # React frontend <br>
-│  ├─ src/ <br>
-│  └─ package.json <br>
-└─ README.md       # Project overview <br>
-
-
-Each folder is structured to **separate concerns clearly**: backend logic, database connections, and API endpoints live in `tib-backend`, while the user interface, interactivity, and story presentation live in `tib-frontend`. This organization supports future expansion, such as adding the delivery role, real-time notifications, or additional narrative events, while keeping full-stack practices clean and maintainable.
-
----
-
 ## Narrative Integration
 
 The game is designed to **weave utility and story together**: each parcel may have narrative significance, each locker assignment contributes to gameplay strategy, and every role offers unique ways to explore the inn’s residents, visitors, and magical systems. This ensures that even standard backend operations, like inserting and querying parcels, contribute meaningfully to the player’s experience.
