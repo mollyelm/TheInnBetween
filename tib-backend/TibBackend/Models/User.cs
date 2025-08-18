@@ -37,7 +37,6 @@ public class User
     public bool IsOnShift { get; set; }                // Indicates if user is actively playing this session
 }
 
-// ----- Role Enum -----
 public enum UserRole
 {
     Clerk,
