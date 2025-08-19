@@ -26,9 +26,9 @@ public class User
     public string SettingsJson { get; set; }           // Flexible user settings (theme, preferences, etc.)
 
     // ----- Navigation / Relationships -----
-    public ICollection<Parcel> CreatedParcels { get; set; } = new List<Parcel>(); // Parcels user has created
     public ICollection<ActionHistory> Actions { get; set; } = new List<ActionHistory>(); // Game/admin actions
-    
+    public ICollection<Seal> SealsApplied { get; set; } = new List<Seal>();
+
     // Permanent tracking of scanned parcels (many-to-many)
     public ICollection<Parcel> ScannedParcels { get; set; } = new List<Parcel>();
 

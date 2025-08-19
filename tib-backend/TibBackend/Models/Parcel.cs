@@ -8,9 +8,11 @@ public class Parcel
     // ----- Core Database Fields -----
     public int Id { get; set; }                         // Primary key
     public string TrackingNumber { get; set; }          // Unique parcel identifier
-    public string SenderName { get; set; }              // NPC sender
+    public int? SenderNpcId { get; set; }
+    public Npc? SenderNpc { get; set; }
     public int? SenderLocationId { get; set; }          // Optional sender location reference
-    public string RecipientName { get; set; }           // Resident or NPC recipient
+    public int? RecipientNpcId { get; set; }
+    public Npc? RecipientNpc { get; set; }
     public int? RecipientLocationId { get; set; }       // Optional recipient location reference
     public ParcelSize Size { get; set; }                // Parcel size category
     public ParcelStatus Status { get; set; }            // Current parcel status
